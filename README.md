@@ -6,5 +6,6 @@ An Electronic Personal Assistant
 <p><a href = "https://pypi.python.org/pypi/SpeechRecognition/">Speech Recognition 3.1.3</a></p> 
 <p>PortAudio</p>
 <p>PyAudio</p>
+<p>flac</p>
 
 
