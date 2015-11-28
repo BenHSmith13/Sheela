@@ -9,17 +9,18 @@ Setup
 ####If you do not have the following, get them:
 - Natural Language Toolkit http://www.nltk.org/
 
-  >1. sudo pip install -U nltk
-  >2. sudo pip install -U numpy
-  >3. In the Python Interpreter run
+  1. sudo pip install -U nltk
+  2. sudo pip install -U numpy
+  3. In the Python Interpreter run
+
+  - import nltk
+  - nltk.download()
   
-  > >>> import nltk
-  > >>> nltk.download()
-  
-  
-- Speech Recognition 3.1.3 https://pypi.python.org/pypi/SpeechRecognition/ 
+- Speech Recognition 3.1.3 https://pypi.python.org/pypi/SpeechRecognition/
+  - pip install SpeechRecognition
 - PortAudio
 - PyAudio
+  - pip install pyaudio
 - flac
 
 Google Speech API
