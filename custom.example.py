@@ -9,3 +9,5 @@ commands = ['Custom', 'custom']
 def request(command, param):
     if command == 'Custom' or command == 'custom':
         print('Add Custom Commands')
+    else:
+        print("Unknown Custom Command")

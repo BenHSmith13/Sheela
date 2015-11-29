@@ -14,3 +14,5 @@ def request(req):
         terminal_procedures.say(params[2])
     elif params[0] in custom.commands:
         custom.request(params[0], params[2])
+    else:
+        terminal_procedures.say("Sorry, I don't know that command")
