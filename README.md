@@ -23,8 +23,21 @@ Setup
   - pip install pyaudio
 - flac
 
-Google Speech API
---------------------
+####Google Speech API
 1. You will need to generate your own key at https://developers.google.com/api-client-library/python/guide/aaa_apikeys
 2. After you have generated your key you will have to enable the Google Speech API
 3. If this doesn't appear on the list of available API you will have to join the Chromium Dev List at https://groups.google.com/a/chromium.org/forum/#!forum/chromium-dev
+
+####Change Secrets and Custom
+- Copy secrets.example.py and custom.example.py
+- Remove .example from the filenames of your copies
+- Add your Google API key to secrets.py
+- Add personalized custom content to custom.py
+
+Use
+------------------
+Run python sheela.py in your terminal and give it commands
+
+Here are some examples:
+- "Google something really cool"
+- "Say tacos rule"
