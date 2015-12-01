@@ -12,6 +12,8 @@ def request(req):
         web_procedures.google(params[2])
     elif params[0] == 'Say' or params[0] == 'say':
         terminal_procedures.say(params[2])
+    elif params[0] == 'Open' or params[0] == 'open':
+        terminal_procedures.open_program(params[2])
     elif params[0] in custom.commands:
         custom.request(params[0], params[2])
     else:
