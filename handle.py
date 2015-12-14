@@ -1,6 +1,7 @@
 import web_procedures
 import terminal_procedures
 import custom
+# import save_memo
 
 
 def request(req):
@@ -16,7 +17,7 @@ def request(req):
     elif action.find('fun') > -1:
         print(req)
         custom.joke()
-    elif action == 'notes.save':
-        print(req)
-        custom.joke()
+    # elif action == 'notes.save':
+    #     print(req)
+    #     save_memo
 
