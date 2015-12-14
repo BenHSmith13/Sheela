@@ -5,9 +5,12 @@ import format
 import handle
 import pdb
 
+terminal_procedures.say('Welcome to Sheela, your personal digital assistant')
+
 while True:
     result = json.loads(input.process())
     result = format.byteify(result)
+    print(result)
 
     if result['result']['action'] == 'initiateRequest':
         terminal_procedures.say(result['result']['fulfillment']['speech'])

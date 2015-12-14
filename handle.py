@@ -16,8 +16,7 @@ def request(req):
     elif action.find('fun') > -1:
         print(req)
         custom.joke()
-    # elif params[0] in custom.commands:
-    #     custom.request(params[0], params[2])
-    # else:
-    #     terminal_procedures.say("Sorry, I don't know that command")
+    elif action == 'notes.save':
+        print(req)
+        custom.joke()
 
