@@ -4,4 +4,6 @@
 # If this doesn't appear on the list of available API you will have to join
 # the Chromium Dev List at https://groups.google.com/a/chromium.org/forum/#!forum/chromium-dev
 
-google_api_key = 'Paste Key Here'
+GOOGLE_API_KEY = 'Paste Key Here'
+CLIENT_ACCESS_TOKEN = '<YOUR_CLIENT_ACCESS_TOKEN>'
+SUBSCRIPTION_KEY = '<YOUR_SUBSCRIPTION_KEY>'

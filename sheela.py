@@ -1,18 +1,19 @@
-import os
-import speech_recognition as sr
-import secrets
+import input
+import json
+import terminal_procedures
+import format
 import handle
+import pdb
 
-# obtain audio from the microphone
-r = sr.Recognizer()
-with sr.Microphone() as source:
-    print('What can I do for you?')
-    audio = r.listen(source)
+while True:
+    result = json.loads(input.process())
+    result = format.byteify(result)
 
-# recognize speech using Google Speech Recognition
-try:
-    handle.request(r.recognize_google(audio, key=secrets.google_api_key))
-except sr.UnknownValueError:
-    print("Google Speech Recognition could not understand audio")
-except sr.RequestError as e:
-    print("Could not request results from Google Speech Recognition service; {0}".format(e))
+    if result['result']['action'] == 'initiateRequest':
+        terminal_procedures.say(result['result']['fulfillment']['speech'])
+        result = json.loads(input.process())
+        result = format.byteify(result)
+        if len(result['result']['fulfillment']['speech']) > 0:
+            terminal_procedures.say(result['result']['fulfillment']['speech'])
+        else:
+            handle.request(result)
