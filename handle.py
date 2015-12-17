@@ -10,7 +10,7 @@ def request(req):
 
     if action.find('search') > -1:
         print(req)
-        web_procedures.google(req['result']['resolvedQuery'])
+        web_procedures.google(req['result']['parameters']['q'])
     elif action.find('open') > -1:
         print(req)
         terminal_procedures.open_program(req['result']['parameters']['app_name'])
